@@ -6,13 +6,15 @@ public class Angajati {
     String nume;
     String prenume;
     String nr_tel;
+    int vechime;
     int durata_contract;
     int salariu;
 
 
-    public Angajati(String nume, String prenume, String nr_tel, int durata_contract, int salariu) {
+    public Angajati(String nume, String prenume, String nr_tel, int durata_contract, int salariu, int vechime) {
         this.nume = nume;
         this.prenume = prenume;
+        this.vechime=vechime;
         this.nr_tel = nr_tel;
         this.durata_contract = durata_contract;
         this.salariu = salariu;
@@ -37,6 +39,12 @@ public class Angajati {
     }
     public void changeSalary(int salariu) {
         this.salariu=salariu;
+    }
+
+    public String getInfo() {
+        return "Angajatul " + this.nume +" "+  this.prenume + "are un salariu de " + this.salariu +
+                "lei si o durata a contractului de " + this.durata_contract + " ani si poate fi contactat la numarul de telefon:" +
+                this.nr_tel + ".";
     }
 
 }
