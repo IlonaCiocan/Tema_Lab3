@@ -18,6 +18,16 @@ public class Angajati {
         this.salariu = salariu;
     }
 
+    public void changeSurname(String nume) {
+        this.nume = nume;
+
+    }
+
+    public void changeFirstName(String prenume) {
+        this.prenume = prenume;
+
+    }
+
     
 
 
