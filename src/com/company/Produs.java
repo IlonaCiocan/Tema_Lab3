@@ -6,9 +6,9 @@ public class Produs {
     String nume;
     String nume_vechi; // pentru produsele cu nume schimbat
     int pret;
-    ArrayList<String> caracteristiciSpeciale;
+    ArrayList<Integer> caracteristiciSpeciale;
 
-    public Produs(String nume, int pret, ArrayList<String> caracteristiciSpeciale) {
+    public Produs(String nume, int pret, ArrayList<Integer> caracteristiciSpeciale) {
         this.nume = nume;
         this.pret = pret;
         this.caracteristiciSpeciale = caracteristiciSpeciale;
@@ -37,7 +37,7 @@ public class Produs {
         return pret;
     }
 
-    public ArrayList<String> getCaracteristiciSpeciale() {
+    public ArrayList<Integer> getCaracteristiciSpeciale() {
         return caracteristiciSpeciale;
     }
 
