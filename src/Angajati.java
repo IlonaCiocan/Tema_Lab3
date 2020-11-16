@@ -28,7 +28,16 @@ public class Angajati {
 
     }
 
-    
+      public void changePhone(String nr_tel) {
+        this.nr_tel=nr_tel;
+    }
+    public void changeContract(int durata_contract) {
+        this.durata_contract=durata_contract;
+
+    }
+    public void changeSalary(int salariu) {
+        this.salariu=salariu;
+    }
 
 
 }
