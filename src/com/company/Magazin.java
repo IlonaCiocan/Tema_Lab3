@@ -16,4 +16,8 @@ public class Magazin {
         this.produse = produse;
         this.adresa = adresa;
     }
+
+    public void setNume(String nume) {
+        this.nume = nume;
+    }
 }
