@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Produs {
     String nume;
+    String nume_vechi; // pentru produsele cu nume schimbat
     int pret;
     ArrayList<String> caracteristiciSpeciale;
 
@@ -22,6 +23,10 @@ public class Produs {
     public Produs() {
         pret = -1;
         caracteristiciSpeciale = new ArrayList<>();
+    }
+
+    public void setNume_vechi(String nume_vechi) {
+        this.nume_vechi = nume_vechi;
     }
 
     public String getNume() {
