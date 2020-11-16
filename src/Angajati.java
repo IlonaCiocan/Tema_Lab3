@@ -39,5 +39,10 @@ public class Angajati {
         this.salariu=salariu;
     }
 
+  public String getInfo() {
+        return "Angajatul " + this.nume +" "+  this.prenume + "are un salariu de " + this.salariu +
+                "lei si o durata a contractului de " + this.durata_contract + " ani si poate fi contactat la numarul de telefon:" +
+                this.nr_tel + ".";
+    }
 
 }
